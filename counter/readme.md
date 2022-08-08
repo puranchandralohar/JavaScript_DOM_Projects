@@ -7,6 +7,6 @@
 <p>On Clicking Reset Button</p>
 <img src="/counter/images/output.png">
 <p>On Clicking Increse Button</p>
-<img src="/counter/images/output1.png">
+<img src="/counter/images/Output1.png">
 <p>On Clicking Decrese Button</p>
 <img src="/counter/images/output2.png">
