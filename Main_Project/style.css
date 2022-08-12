@@ -1,51 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.navbar{
-    background-color: #3c3c3c;
-    padding: 10px;
-    margin-top:10px;
+body {
+  background-color: #f7f8fa;
 }
 
-  .open-btn{
-    text-align: center;
-    margin-left: 40px;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    background-color: goldenrod;
-    box-shadow: 0 0 5px 2px gold;
-  }
+/* -----------Navabar-------- */
+.navbar {
+  background-color: #3c3c3c;
+  padding: 10px;
+  margin-top: 10px;
+}
 
+/* Navbar Button --> Modal open when Click */
+.open-btn {
+  text-align: center;
+  margin-left: 40px;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: #ffa652;
+}
 
-  .close-btn{
-    position: absolute;
-    top:0;
-    right:0;
-    padding: 10px 20px;
-    border:none;
-    color:white;
-    background-color: #a6a6a6;
-    font-size: 1.2em;
-  }
-  .modal-container{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    background-color: aqua;
-    width:800px;
-    height:400px;
-    visibility: hidden;
-    z-index:-1;
-  }
+/* Close Button --> for Closing Modal */
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background: transparent;
+  font-size: 1.2em;
+}
 
-  .active{
-    visibility: visible;
-    z-index: 1;
-  }
+/* Modal container --> Making it Hidden and Visible */
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  background-color: #64c4c3;
+  box-shadow: 2px 3px 3px #817e7e;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.active {
+  visibility: visible;
+  z-index: 1;
+}
+
+/* Modal Content Part */
+.modal-content {
+  display: flex;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 400px;
+}
+
+.color-area {
+  background-color: #3c3c3c;
+  padding: 50px;
+  width: 30%;
+  height: 400px;
+}
+
+#msg {
+  width: 100%;
+  padding: 50px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #eee;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.btn {
+  position: absolute;
+  bottom: 20px;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #ffa652;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #282829;
+  cursor: pointer;
+}
+
+/* Color Area */
+
+.box {
+  margin: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.red-box {
+  background-color: red;
+}
+.green-box {
+  background-color: green;
+}
+.blue-box {
+  background-color: blue;
+}
+.pink-box {
+  background-color: pink;
+}

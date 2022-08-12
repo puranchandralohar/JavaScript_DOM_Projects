@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-            <a href="#" class="open-btn">Create Task</a>
-        </div>
+      <div class="navbar">
+        <a href="#" class="open-btn">Create Task</a>
+      </div>
     </header>
 
     <main>
-        <section class="main">
+      <section class="main"></section>
 
-        </section>
-
-        <section>
-            <div class="modal-container">
-                <div class="modal-content">
-                    <button class="close-btn">X</button>
-
-                </div>
+      <!------------- Modal Area----------->
+      <section>
+        <div class="modal-container">
+          <button class="close-btn">X</button>
+          <div class="modal-content">
+            <div class="text-area">
+              <textarea
+                name="task"
+                id="msg"
+                cols="30"
+                rows="10"
+                placeholder="Please enter task !"
+              ></textarea>
+              <button type="button" class="btn">Done</button>
             </div>
-
-        </section>
+            <div class="color-area">
+              <div class="box red-box"></div>
+              <div class="box green-box"></div>
+              <div class="box blue-box"></div>
+              <div class="box pink-box"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

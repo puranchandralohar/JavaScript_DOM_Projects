@@ -1,14 +1,13 @@
-let openBtn = document.querySelector('.open-btn');
+let openBtn = document.querySelector(".open-btn");
 
-let modal = document.querySelector('.modal-container');
+let modal = document.querySelector(".modal-container");
 
-let closeBtn = document.querySelector('.close-btn');
+let closeBtn = document.querySelector(".close-btn");
 
-openBtn.addEventListener('click',()=>{
-    modal.classList.add('active');
-})
+openBtn.addEventListener("click", () => {
+  modal.classList.add("active");
+});
 
-closeBtn.addEventListener('click',()=>{
-    modal.classList.remove('active');
-
-})
+closeBtn.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
