@@ -22,6 +22,17 @@
     box-shadow: 0 0 5px 2px gold;
   }
 
+
+  .close-btn{
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 10px 20px;
+    border:none;
+    color:white;
+    background-color: #a6a6a6;
+    font-size: 1.2em;
+  }
   .modal-container{
     position: absolute;
     top:50%;
