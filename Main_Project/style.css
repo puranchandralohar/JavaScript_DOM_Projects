@@ -105,6 +105,7 @@ body {
 /* Color Area */
 
 .box {
+    text-align: center;
   margin: 20px;
   height: 40px;
   width: 100px;
@@ -114,13 +115,63 @@ body {
 
 .red-box {
   background-color: red;
+  color:red;
 }
 .green-box {
   background-color: green;
+  color:green;
 }
 .blue-box {
   background-color: blue;
+  color:blue;
 }
 .pink-box {
   background-color: pink;
+  color:pink;
 }
+
+/*------------------- Main Area--------------------------*/
+
+.main{
+    margin:50px;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.task{
+  position: relative;
+    height: 200px;
+    width: 300px;
+    margin:10px;
+    background-color: #c5c6ff;
+    box-shadow: 1px 1px 3px #3c3c3c;
+}
+
+.task h1{
+  text-align: center;
+  padding: 10px;
+}
+
+ .icons{
+  position: absolute;
+  bottom: 0;
+  height:35px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+} 
+
+ .icon-set .fa-solid{
+  margin-left:20px;
+  cursor: pointer;
+}
+
+.icons .fa-solid{
+  margin-right: 10px;
+  cursor: pointer;
+} 
