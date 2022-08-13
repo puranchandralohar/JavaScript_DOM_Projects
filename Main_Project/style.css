@@ -105,7 +105,7 @@ body {
 /* Color Area */
 
 .box {
-    text-align: center;
+  text-align: center;
   margin: 20px;
   height: 40px;
   width: 100px;
@@ -113,21 +113,25 @@ body {
   cursor: pointer;
 }
 
+.box:active{
+  border:5px solid white
+}
+
 .red-box {
   background-color: red;
   color:red;
 }
-.green-box {
-  background-color: green;
-  color:green;
+.yellow-box {
+  background-color: yellow;
+  color:yellow;
 }
 .blue-box {
   background-color: blue;
   color:blue;
 }
-.pink-box {
-  background-color: pink;
-  color:pink;
+.black-box {
+  background-color: black;
+  color:black;
 }
 
 /*------------------- Main Area--------------------------*/
@@ -156,22 +160,29 @@ body {
   padding: 10px;
 }
 
+.task-head{
+  border-radius: 10px;
+}
+
  .icons{
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   height:35px;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
 } 
 
- .icon-set .fa-solid{
-  margin-left:20px;
+.icons button{
+  padding: 5px;
+  background-color: transparent;
+  border:none;
+  font-size: 1em;
   cursor: pointer;
 }
 
-.icons .fa-solid{
-  margin-right: 10px;
-  cursor: pointer;
-} 
+.icon-set button{
+  margin-left: 20px;
+}
