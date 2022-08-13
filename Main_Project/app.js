@@ -18,20 +18,18 @@ modalBtn.addEventListener("click", () => {
 
   let mainContent = document.querySelector(".main-content");
 
-  // function getColor(){
-  //   let boxes = Array.from(document.querySelectorAll('.box'));
-  //   boxes.map((box)=>{
-  //     box.addEventListener('click',(e)=>{
-  //       let color =  e.target.innerText;
-  //       // console.log(color);
-  //       taskhead.classList.toggle(`${color}-box`);
-  //     });
-  //   });
-  // }
-  // getColor();
-  
-
-  modal.classList.remove('active');
+  function getColor(){
+    let boxes = Array.from(document.querySelectorAll('.box'));
+    boxes.map((box)=>{
+      box.addEventListener('click',(e)=>{
+        let color =  e.target.innerText;
+        console.log(color);
+        // taskhead.classList.toggle(`${color}-box`);
+        return color;
+      });
+    });
+  }
+  let mycolor = getColor();
 
   let msg = document.querySelector("#msg"); //Textarea
 
@@ -42,7 +40,7 @@ modalBtn.addEventListener("click", () => {
   let taskhead = document.createElement("div"); //inside task(color);
   taskhead.classList.add("task-head");
   taskhead.style.height = '35px';
-  taskhead.style.backgroundColor = getColor();
+  taskhead.style.backgroundColor = mycolor;
   task.append(taskhead);
 
   let h1 = document.createElement('h1');
@@ -102,6 +100,20 @@ modalBtn.addEventListener("click", () => {
   colorBox.classList.add('colorBox');
   iconSet.append(colorBox);
   colorBox.style.border = "2px solid black";
+
+  colorBox.addEventListener('click',changeColor);
+    
+  function changeColor(){
+    let colors = ['red','yellow','blue','black'];
+    
+    let randomNumber =  Math.floor(Math.random()*4);
+    colorBox.style.backgroundColor = colors[randomNumber];
+    taskhead.style.backgroundColor = colors[randomNumber];
+
+  }
+
+  modal.classList.remove('active');
+  msg.value = "";
 
 });
 

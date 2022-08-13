@@ -11,8 +11,31 @@ body {
 /* -----------Navabar-------- */
 .navbar {
   background-color: #3c3c3c;
-  padding: 10px;
   margin-top: 10px;
+  height: 40px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  box-shadow: 0 3px 5px #8d8d8d;
+}
+
+.color-list{
+  display: flex;
+  align-items:center;
+  padding: 8px;
+  color:white;
+  border-radius: 10px;
+  background-color: #52ceff;
+}
+.color-list li{
+  list-style: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-box{
+  height: 25px;
+  width: 25px;
 }
 
 /* Navbar Button --> Modal open when Click */
@@ -24,6 +47,10 @@ body {
   text-decoration: none;
   font-size: 1.2em;
   background-color: #ffa652;
+}
+
+.open-btn:hover{
+  background-color: #ff527d;
 }
 
 /* Close Button --> for Closing Modal */
