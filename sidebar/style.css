@@ -24,7 +24,7 @@ body{
 }
 
 .sidebar-toggle{
-    padding: 10px;
+    padding: 20px;
     background-color: transparent;
     color: #191919;
     border: none;
@@ -33,15 +33,17 @@ body{
 }
 
 .sidebar{
+    height: 100%;
+    width: 0;
     position: absolute;
     right: 0;
     top:0;
     flex-direction: column;
     justify-content: space-between;
     background-color: #e984a2;
-    padding: 20px;
     height: inherit;
-    width: 40%;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 .menu li{
@@ -57,13 +59,36 @@ body{
     font-weight: 500;
 }
 
+.menu a:hover{
+    color:#229e22;
+    font-weight: 800;
+}
+
+
+
 .social-links{
     align-items: center;
     justify-content: space-around;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .social-links li{
     list-style: none;
     padding: 10px;
+}
+
+.fa-facebook:hover{
+    color:blue;
+}
+
+.fa-instagram:hover{
+    color:#bc2a8d;
+}
+
+.fa-twitter:hover{
+    color:#00acee;
+}
+
+.fa-linkedin:hover{
+    color:#0072b1;
 }
