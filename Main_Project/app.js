@@ -4,6 +4,17 @@ let modal = document.querySelector(".modal-container");
 
 let closeBtn = document.querySelector(".close-btn");
 
+
+
+let z = document.querySelector('.color-area');
+var color="";
+z.addEventListener('click',(e)=>{
+
+  color =e.target.innerText
+  // console.log(color);
+})
+
+
 openBtn.addEventListener("click", () => {
   modal.classList.add("active");
 });
@@ -18,18 +29,6 @@ modalBtn.addEventListener("click", () => {
 
   let mainContent = document.querySelector(".main-content");
 
-  function getColor(){
-    let boxes = Array.from(document.querySelectorAll('.box'));
-    boxes.map((box)=>{
-      box.addEventListener('click',(e)=>{
-        let color =  e.target.innerText;
-        console.log(color);
-        // taskhead.classList.toggle(`${color}-box`);
-        return color;
-      });
-    });
-  }
-  let mycolor = getColor();
 
   let msg = document.querySelector("#msg"); //Textarea
 
@@ -40,7 +39,7 @@ modalBtn.addEventListener("click", () => {
   let taskhead = document.createElement("div"); //inside task(color);
   taskhead.classList.add("task-head");
   taskhead.style.height = '35px';
-  taskhead.style.backgroundColor = mycolor;
+  taskhead.style.backgroundColor = color;
   task.append(taskhead);
 
   let h1 = document.createElement('h1');
@@ -81,6 +80,7 @@ modalBtn.addEventListener("click", () => {
   trash.classList.add('trash');
   trash.innerHTML = '<i class="fa-solid fa-trash"></i>';
   iconSet.append(trash);
+  trash.style.color = 'red';
 
   trash.addEventListener('click',()=>{
     task.remove();
@@ -94,7 +94,9 @@ modalBtn.addEventListener("click", () => {
   pencil.addEventListener('click',() =>{
         pencil.style.color = "green";
         h1.contentEditable = true;
-  })
+  })  
+
+    
 
   let colorBox = document.createElement('button');
   colorBox.classList.add('colorBox');

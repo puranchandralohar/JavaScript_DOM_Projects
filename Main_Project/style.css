@@ -140,8 +140,8 @@ body {
   cursor: pointer;
 }
 
-.box:active{
-  border:5px solid white
+.box:hover{
+  border:2px solid goldenrod;
 }
 
 .red-box {
