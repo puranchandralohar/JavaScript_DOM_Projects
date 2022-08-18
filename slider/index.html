@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+  <!-- Main Slider Container -->
+  <div class="slide-container">
 
+    <!-- Each Slide -->
+    <div class="slide">
+      <img
+        src="https://images.unsplash.com/photo-1611918126831-0a8352d6196f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        alt="Image #01">
+      <div class="caption">Caption1</div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="slide">
+      <img
+        src="https://images.unsplash.com/photo-1622899505135-694e8ccffce8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        alt="Image #02">
+      <div class="caption">Caption2</div>
+    </div>
+
+    <div class="slide">
+      <img
+        src="https://images.unsplash.com/photo-1586521995568-39abaa0c2311?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        alt="Image #03">
+      <div class="caption">Caption3</div>
+    </div>
+
+    <span class="arrow prev" onclick="controll(-1)">&#10094;</span>
+    <span class="arrow next" onclick="controll(1)">&#10095;</span>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
