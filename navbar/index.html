@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Project</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-
+    <script src="https://kit.fontawesome.com/b59b4a47db.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <main>
         <header class="header">
             <nav>
-                <label for="logo">PuranChandra</label>
+                <label for="logo" class="logo">Puran's <span style="color:#eee">Cafe..</span></label>
             </nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
-            <div class="icons">
-                <box-icon name='menu' animation='tada-hover'></box-icon>
+            <div class="center">
+                <ul class="links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Restaurents</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
+            <button class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </header>
 
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
