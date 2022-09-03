@@ -1,0 +1,81 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:#87926a;
+  color:#fff;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.img img {
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 10px 20px;
+  border:2px solid red;
+}
+
+.puja-info{
+  border:2px solid red;
+  padding: 20px 10px;
+  margin: 20px;
+  flex-direction: column;
+  line-height: 25px;
+  text-align: center;
+}
+
+.puja-info h3 {
+  text-transform: uppercase;
+  color: #9c0909;
+  font-size: 25px;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+}
+
+.puja-info p {
+  margin: 5px;
+  color: black;
+  text-align: justify;
+}
+
+.deadline {
+  display: flex;
+}
+
+.deadline-format {
+  background: #313131;
+  color: white;
+  margin-right: 1rem;
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.deadline h4{
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
